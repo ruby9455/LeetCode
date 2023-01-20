@@ -5,7 +5,7 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, list1: List[ListNode], list2: List[ListNode]) -> List[ListNode]:
-        # create a node point to result
+        # create a node point to result, starts at pos -1
         node = ListNode()
         result = node
         
