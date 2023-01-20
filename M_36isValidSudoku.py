@@ -12,10 +12,10 @@ class Solution:
                 if board[x][y] == ".":
                     continue
                 # duplicate num
-                if board[x][y] in rows[x] or board[x][y] in cols[y] or board[x][y] in subgrids[(x/3),(y/3)]:
+                if board[x][y] in rows[x] or board[x][y] in cols[y] or board[x][y] in subgrids[(x//3),(y//3)]:
                     return False
                 # new num
                 cols[y].add(board[x][y])
                 rows[x].add(board[x][y])
-                subgrids[(x/3),(y/3)].add(board[x][y])
+                subgrids[(x//3),(y//3)].add(board[x][y])
         return True
