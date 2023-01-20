@@ -2,11 +2,12 @@ class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-        
+
+class Solution:
     def mergeTwoLists(self, list1: List[ListNode], list2: List[ListNode]) -> List[ListNode]:
         # create a node point to result
-        head = ListNode()
-        result = head
+        node = ListNode()
+        result = node
         
         # compare the first ele in two lists, append smaller one
         while list1 and list2:
@@ -30,4 +31,4 @@ class ListNode:
         elif list2:
             result.next = list2
 
-        return head.next
+        return node.next
