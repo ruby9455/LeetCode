@@ -1,6 +1,6 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        # hold existing numbers in 
+        # existing numbers 
         cols = defaultdict(set)
         rows = defaultdict(set)
         subgrids = defaultdict(set)
